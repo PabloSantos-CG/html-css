@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela</title>
     <style>
         h1{
             text-align: center;
+            margin-bottom: 150px;
         }
 
         table{
@@ -18,58 +19,68 @@
             max-width: 450px;
         }
 
-        td{
+        caption{
+            background-color: #80808032;
+            padding: 5px;
+        }
+        
+        thead, tfoot{
+            background-color: #0e0e0eb4;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+        
+        td, th{
             border: 1px solid black;
             padding: 5px;
             width: 450px;
         }
-
-        thead, tfoot{
-            background-color: #8080805a;
-            font-weight: bold;
-        }
-
         .num{
             text-align: right;
         }
         
+        .position{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Tabela dos 4 países mais populosos</h1>
+    <h1>Exercício de tabelas 002</h1>
     <table>
+        <caption>Tabela dos 4 países mais populosos</caption>
         <thead>
             <tr>
-                <td>Posição</td>
-                <td>País (ou território dependente)</td>	<td>Estimativa da ONU</td>
+                <th scope="col">Posição</th>
+                <th scope="col" style="width: 50%;">País (ou território dependente)</th>
+                <th scope="col">Estimativa da ONU</th>
             </tr>
         </thead>
         
         <tbody>
             <tr>
-                <td>1</td>
+                <td class="position">1</td>
                 <td>Índia</td>
                 <td class="num">1 425 627 557</td>
             </tr>
             <tr>
-                <td>2</td>
+                <td class="position">2</td>
                 <td>China</td>
                 <td class="num">1 411 780 000</td>
             </tr>
             <tr>
-                <td>3</td>
+                <td class="position">3</td>
                 <td>Estados Unidos</td>
                 <td class="num">331 449 281</td>
             </tr>
             <tr>
-                <td>4</td>
+                <td class="position">4</td>
                 <td>Indonésia</td>
                 <td class="num">273 523 615</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td>Total</td>
+                <th scope="row">Total</th>
                 <td></td>
                 <td class="num">3.442.380.453</td>
             </tr>

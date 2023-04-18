@@ -17,6 +17,7 @@
             margin: auto;
             min-width: 365px;
             max-width: 450px;
+            position: relative;
         }
 
         caption{
@@ -25,11 +26,17 @@
         }
         
         thead, tfoot{
-            background-color: #0e0e0eb4;
+            background-color: #0e0e0e;
             font-weight: bold;
             color: whitesmoke;
         }
         
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: #0e0e0e;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 5px;
@@ -42,12 +49,18 @@
         .position{
             text-align: center;
         }
+        p{
+            width: 900px;
+            margin: auto;
+            margin-top: 20px;
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de tabelas 002</h1>
     <table>
-        <caption>Tabela dos 4 países mais populosos</caption>
+        <caption>Top 10 países mais populosos</caption>
         <thead>
             <tr>
                 <th scope="col">Posição</th>
@@ -77,14 +90,55 @@
                 <td>Indonésia</td>
                 <td class="num">273 523 615</td>
             </tr>
+            <tr>
+                <td class="position">5</td>
+                <td> Paquistão</td>
+                <td class="num">220 892 340	</td>
+            </tr>
+            <tr>
+                <td class="position">6</td>
+                <td> Nigéria</td>
+                <td class="num">217 757 685</td>
+            </tr>
+            <tr>
+                <td class="position">7</td>
+                <td>Brasil</td>
+                <td class="num">215 851 765</td>
+            </tr>
+            <tr>
+                <td class="position">8</td>
+                <td> Bangladesh</td>
+                <td class="num">164 689 383</td>
+            </tr>
+            <tr>
+                <td class="position">9</td>
+                <td>Rússia</td>
+                <td class="num">145 934 462</td>
+            </tr>
+            <tr>
+                <td class="position">10</td>
+                <td> México</td>
+                <td class="num">128 932 753</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total</th>
                 <td></td>
-                <td class="num">3.442.380.453</td>
+                <td class="num">x.xxx.xxx.xxx</td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime excepturi eveniet vero placeat repudiandae, et ex minima molestias tenetur accusamus nostrum quasi repellat sint. Quibusdam tempora architecto magnam expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id assumenda ipsa excepturi dolorum voluptates nemo reprehenderit amet magni maiores commodi, fuga minima quisquam odio, magnam ullam odit deleniti? Rerum, facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi facilis iusto cupiditate, facere sint beatae nam tempora voluptas provident hic minima est unde, maxime quo autem praesentium incidunt repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt architecto ducimus non excepturi, delectus iusto perferendis voluptates quod! Inventore ullam quas sequi natus beatae, modi itaque exercitationem praesentium dolor quasi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime excepturi eveniet vero placeat repudiandae, et ex minima molestias tenetur accusamus nostrum quasi repellat sint. Quibusdam tempora architecto magnam expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id assumenda ipsa excepturi dolorum voluptates nemo reprehenderit amet magni maiores commodi, fuga minima quisquam odio, magnam ullam odit deleniti? Rerum, facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi facilis iusto cupiditate, facere sint beatae nam tempora voluptas provident hic minima est unde, maxime quo autem praesentium incidunt repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt architecto ducimus non excepturi, delectus iusto perferendis voluptates quod! Inventore ullam quas sequi natus beatae, modi itaque exercitationem praesentium dolor quasi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime excepturi eveniet vero placeat repudiandae, et ex minima molestias tenetur accusamus nostrum quasi repellat sint. Quibusdam tempora architecto magnam expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id assumenda ipsa excepturi dolorum voluptates nemo reprehenderit amet magni maiores commodi, fuga minima quisquam odio, magnam ullam odit deleniti? Rerum, facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi facilis iusto cupiditate, facere sint beatae nam tempora voluptas provident hic minima est unde, maxime quo autem praesentium incidunt repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt architecto ducimus non excepturi, delectus iusto perferendis voluptates quod! Inventore ullam quas sequi natus beatae, modi itaque exercitationem praesentium dolor quasi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime excepturi eveniet vero placeat repudiandae, et ex minima molestias tenetur accusamus nostrum quasi repellat sint. Quibusdam tempora architecto magnam expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id assumenda ipsa excepturi dolorum voluptates nemo reprehenderit amet magni maiores commodi, fuga minima quisquam odio, magnam ullam odit deleniti? Rerum, facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi facilis iusto cupiditate, facere sint beatae nam tempora voluptas provident hic minima est unde, maxime quo autem praesentium incidunt repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt architecto ducimus non excepturi, delectus iusto perferendis voluptates quod! Inventore ullam quas sequi natus beatae, modi itaque exercitationem praesentium dolor quasi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime excepturi eveniet vero placeat repudiandae, et ex minima molestias tenetur accusamus nostrum quasi repellat sint. Quibusdam tempora architecto magnam expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id assumenda ipsa excepturi dolorum voluptates nemo reprehenderit amet magni maiores commodi, fuga minima quisquam odio, magnam ullam odit deleniti? Rerum, facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi facilis iusto cupiditate, facere sint beatae nam tempora voluptas provident hic minima est unde, maxime quo autem praesentium incidunt repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt architecto ducimus non excepturi, delectus iusto perferendis voluptates quod! Inventore ullam quas sequi natus beatae, modi itaque exercitationem praesentium dolor quasi.</p>
+
 </body>
 </html>

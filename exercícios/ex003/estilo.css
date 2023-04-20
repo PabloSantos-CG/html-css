@@ -62,8 +62,8 @@ section > p{
     line-height: 1.3em;
 }
 iframe{
-    width: 400px;
-    height: 400px;
+    min-width: 40vw;
+    min-height: 50vh;
     display: block;
     margin: 20px auto;
     border: 1px solid black;

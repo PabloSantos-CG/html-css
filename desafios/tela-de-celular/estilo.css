@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
@@ -25,21 +26,16 @@ main{
     transform: translate(-50%, -50%);
 }
 
-img{
+#menu-telefone > img{
     width: 60px;
-    border-radius: 30px;
-    display: block;
-    margin-bottom: 10px;
+    border-radius: 50%;
+    margin: 10px;
 }
 
-img:hover{
-    width: 65px;
-    border-radius: 32.5px;
-}
-
-#menu-telefone{
-    width: 65px;
-    margin-left: auto;
+#menu-telefone img:hover{
+    border: 2px solid #ffffff7d;
+    transform: translate(6%, 5%);
+    transition: 0.5s, border 0.25s;
 }
 
 #tela{

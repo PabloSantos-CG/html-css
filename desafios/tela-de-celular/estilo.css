@@ -26,7 +26,7 @@ main{
     transform: translate(-50%, -50%);
 }
 
-#menu-telefone > img{
+#menu-telefone  img{
     width: 60px;
     border-radius: 50%;
     margin: 10px;

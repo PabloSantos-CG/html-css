@@ -5,11 +5,8 @@
 }
 
 html, body{
-    width: 100vw;
-    height: 100vh;
-    background: #000000 url(imagens/fundo-madeira.jpg) no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient(130deg, #4F6F8C 70%, #F7D6D2 30%);
+    
 }
 
 main{
@@ -33,7 +30,7 @@ main{
 }
 
 #menu-telefone img:hover{
-    border: 2px solid #ffffff7d;
+    border: 2px solid #ffffffc1;
     transform: translate(6%, 5%);
     transition: 0.5s, border 0.25s;
 }

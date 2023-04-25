@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main id="container">
+
+        <h1>Login de Acesso</h1>
+        <form action="usuario.php" method="post" autocomplete="on">
+
+            <div id="caixa-1">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" id="usuario" required minlength="6" placeholder="digite seu login" autocomplete="username">
+            </div>
+
+            <div id="caixa-2">
+                <label for="senha-usuario">Senha</label>
+                <input type="password" name="senha-usuario" id="senha-usuario" required minlength="8" placeholder="digite sua senha" autocomplete="current-password">
+            </div>
+
+            <input type="submit" value="Entrar" id="botao-entrar">
+
+        </form>
+
+    </main>
+
+    <aside id="barra-lateral">
+        <img src="img/icone-home.png" alt="ícone página principal">
+    </aside>
+</body>
+</html>

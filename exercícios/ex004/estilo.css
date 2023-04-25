@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background: #000000 url(img/img-fundo01.jpg) top center no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#container{
+    width: 50vw;
+    height: 55vh;
+    background-color: #000000a2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 4px 4px 4px #ffffff0f;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    font-variant: small-caps;
+}
+
+#barra-lateral{
+    max-width: 70px;
+    height: 100vh;
+    background-color: #000000b3;
+    padding: 10px;
+}
+
+#barra-lateral > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#barra-lateral > img:hover{
+    border: 2px solid white;
+    position: sticky;
+    transform: translate(5%, 5%);
+    transition: 0.5s, border 0.2s;
+}
+
+form{
+    text-align: left;
+    width: 70%;
+    margin: auto;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px
+}
+
+label{
+    font-weight: bold;
+}
+
+#caixa-1, #caixa-2{
+    margin: 10px 0px 10px 0px;
+}
+
+#botao-entrar{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #00ffff;
+    font-weight: bolder;
+}
+
+#botao-entrar:hover{
+    background-color: #01e8e8dc;
+    cursor: pointer;
+}

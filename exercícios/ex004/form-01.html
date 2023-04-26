@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Cadastro Form</title>
+    <style>
+        span{
+            color: red;
+        }
+
+        form{
+            width: 800px;
+        }
+        
+        fieldset{
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        #fieldset-principal{
+            padding: 20px;
+        }
+
+        div{
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <form action="form-00.html" method="post">
+            <fieldset id="fieldset-principal">
+                <legend>Formulário de cadastro</legend>
+                <div class="email">
+                    <label for="iemail">E-mail<span>*</span></label>
+                    <input type="email" name="email" id="iemail" required placeholder="fulano@gmail.com">
+                </div>
+                <div class="email">
+                    <label for="iemail">Repita seu e-mail<span>*</span></label>
+                    <input type="email" name="email" id="iemail" required placeholder="fulano@gmail.com">
+                </div>
+                
+                <div class="senha">
+                    <label for="isenha">Crie uma senha <span>*</span></label>
+                    <input type="password" name="senha" id="isenha" required minlength="8" placeholder="mínimo 8 dígitos">
+                </div>
+                <div class="senha">
+                    <label for="isenha">Repita sua senha <span>*</span></label>
+                    <input type="password" name="senha" id="isenha" required minlength="8" placeholder="mínimo 8 dígitos">
+                </div>
+
+                <div>
+                    <label for="inome">Nome completo <span>*</span></label>
+                    <input type="text" name="nome" id="inome" required minlength="4">
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Sexo <span>*</span></legend>
+                        <label for="isexo-masc">Masculino</label>
+                        <input type="radio" name="sexo" id="isexo-masc" required>
+                        
+                        <label for="isexo-fem">Feminino</label>
+                        <input type="radio" name="sexo" id="isexo-fem" required>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <label for="icpf">CPF <span>*</span></label>
+                    <input type="text" name="cpf" id="icpf" required minlength="11" placeholder="apenas números">
+                </div>
+
+                <div>
+                    <label for="itel">Celular</label>
+                    <input type="tel" name="telefone" id="itel" placeholder="71 9 0000-0000">
+                </div>
+
+                <div>
+                    <label for="idata">Nascimento <span>*</span></label>
+                    <input type="date" name="data" id="idata" required>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="publicidade" id="ipublicidade" checked>
+                    <label for="ipublicidade">Receber ofertas e novidades por e-mail</label>
+                </div>
+               
+                <div id="botoes">
+                    <input type="submit" value="Concluir">
+                    <input type="reset" value="Limpar tudo">
+                </div>
+            </fieldset>
+            
+        </form>
+        <aside>
+
+        </aside>
+    </main>
 </body>
 </html>

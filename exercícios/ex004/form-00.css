@@ -14,7 +14,8 @@ html, body{
 }
 
 #container{
-    width: 50vw;
+    min-width: 40vw;
+    max-width: 500px;
     height: 55vh;
     background-color: #000000a2;
     position: absolute;

@@ -6,15 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Form</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
         span{
             color: red;
         }
 
         form{
-            width: 800px;
+            min-width: 450px;
+            max-width: 40%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
         
+        input{
+            padding: 0.1em;
+        }
+
         fieldset{
+            box-shadow: 2px 3px 3px #00000017;
             border-radius: 5px;
             padding: 10px;
         }
@@ -24,15 +40,37 @@
         }
 
         div{
-            margin: 10px;
+            margin: 20px;
         }
+
+        .legend1{
+            width: 50%;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        #botoes > input{
+            margin-right: 30px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #botoes > input:hover{
+            background-color: #000000;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
     <main>
         <form action="form-00.html" method="post">
             <fieldset id="fieldset-principal">
-                <legend>Formulário de cadastro</legend>
+                <legend class="legend1">Formulário de cadastro</legend>
                 <div class="email">
                     <label for="iemail">E-mail<span>*</span></label>
                     <input type="email" name="email" id="iemail" required placeholder="fulano@gmail.com">

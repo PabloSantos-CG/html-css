@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    
+    <div class="container">
+        
+        <div class="caixa1">
+
+            <form action="cadastro.php" method="get">
+
+                <div class="form">
+                    <label for="ilogin">Login</label>
+                    <input type="text" name="login" id="ilogin" required>
+                </div>
+
+                <div  class="form">
+                    <label for="isenha">Senha</label>
+                    <input type="password" name="senha" id="isenha" required>
+                </div>
+
+                <input type="submit" value="Enviar" id="botao">
+            </form>
+
+        </div>
+        
+        <div class="caixa2">
+        </div>
+
+    </div>
+
 </body>
 </html>

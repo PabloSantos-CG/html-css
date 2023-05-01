@@ -1,0 +1,7 @@
+menu, footer{
+    display: none;
+}
+
+main::after{
+    content: 'Versão print  Dev Pablo Santos';
+}

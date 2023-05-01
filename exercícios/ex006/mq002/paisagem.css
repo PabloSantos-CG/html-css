@@ -1,0 +1,11 @@
+body{
+    background:#233eff url(../img/cev-landscape.jpg) left bottom no-repeat;
+    background-size: contain;
+}
+
+h1::after{
+    content: 'landscape';
+    color: white;
+    font-size: 0.5em;
+    display: block;
+}

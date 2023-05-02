@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="Mqueries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <h1>Media Queries</h1>
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()" >menu</span>
+        
+        <nav id="menu">
+            <ul class="itens">
+                <li>option</li>
+                <li>option</li>
+                <li>option</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Um texto qualquer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore ipsam saepe nemo quidem quae quod error perspiciatis quis aliquid, reprehenderit cumque quia ex et omnis harum adipisci. Quae, ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur dolor explicabo ullam officiis ipsum minus quam, aperiam ipsam, totam excepturi asperiores. Libero quo corporis ipsam rem voluptate voluptas placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis nemo quas quod animi at accusamus ullam, non repudiandae porro quam molestiae et eveniet. Ea quidem doloribus qui consequatur fuga!</p>
+
+        <h3>Um texto qualquer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore ipsam saepe nemo quidem quae quod error perspiciatis quis aliquid, reprehenderit cumque quia ex et omnis harum adipisci. Quae, ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur dolor explicabo ullam officiis ipsum minus quam, aperiam ipsam, totam excepturi asperiores. Libero quo corporis ipsam rem voluptate voluptas placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis nemo quas quod animi at accusamus ullam, non repudiandae porro quam molestiae et eveniet. Ea quidem doloribus qui consequatur fuga!</p>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if (menu.style.display == "none")
+            menu.style.display = " block "
+            else
+            menu.style.display = " none "
+            
+        }
+    </script>
+</body>
+</html>

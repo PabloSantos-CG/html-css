@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    height: 100vh;
+}
+
+@media print {
+    main{
+        border: 1px solid black;
+    }
+
+    main::after{
+        content: 'Impressão do projeto Media Queries';
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: normal;
+    }
+
+    #pc{ display: none;}
+    #mobile{ display: none;}
+    #print{ display: block;}
+    #tablet{ display: none;}
+    #tv{ display: none;}
+}
+
+@media screen and (min-width: 550px) and (max-width: 820px) {
+    body{
+        background: #000000 url(../../img/back-tablet.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    #pc{ display: none;}
+    #mobile{ display: none;}
+    #print{ display: none;}
+    #tablet{ display: block;}
+    #tv{ display: none;}
+}
+
+@media screen and (min-width: 821px) and (max-width: 1200px) {
+    body{
+        background: #000000 url(../../img/back-pc.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    #pc{ display: block;}
+    #mobile{ display: none;}
+    #print{ display: none;}
+    #tablet{ display: none;}
+    #tv{ display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background: #000000 url(../../img/back-tv.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    #pc{ display: none;}
+    #mobile{ display: none;}
+    #print{ display: none;}
+    #tablet{ display: none;}
+    #tv{ display: block;}
+}

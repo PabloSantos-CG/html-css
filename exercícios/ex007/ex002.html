@@ -7,11 +7,11 @@
     <title>Document</title>
     <style>
         @keyframes exemplo{
-            0%{background-color: #0000ff; top: 0; left: 0;}
-            25%{background-color: #00aaff; top: 0; left: 200px;}
-            50%{background-color: #00f2ff; top: 200px; left: 200px;}
-            75%{background-color: #00ffa2; top: 200px; left: 0;}
-            100%{background-color: #b3ff00; top: 0; left: 0;}
+            0%{background-color: #0000ff; top: 1%; left: 1%;}
+            25%{background-color: #00aaff; top: 1%; left: 75%;}
+            50%{background-color: #00f2ff; top: 75%; left: 75%;}
+            75%{background-color: #00ffa2; top: 75%; left: 2%;}
+            100%{background-color: #b3ff00; top: 2%; left: 2%;}
         }
 
         *{
@@ -19,18 +19,41 @@
             padding: 0;
         }
 
-        div{
+        body{
+            background-color: #000000;
+        }
+
+        .container{
+            width: 300px;
+            height: 300px;
+            position: relative;
+
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 15px 10px #ffffff4f;
+        }
+
+        .conteudo{
             position: absolute;
-            width: 200px;
-            height: 200px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
 
             animation-name: exemplo;
-            animation-duration: 5s;
+            animation-duration: 3s;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
         }
     </style>
 </head>
 <body>
-    <div></div>
+
+    <div class="container">
+        <div class="conteudo">
+        
+        </div>
+    </div>
 </body>
 </html>

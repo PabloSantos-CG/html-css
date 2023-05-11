@@ -2,27 +2,3 @@
     margin: 0;
     padding: 0;
 }
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-
-    align-items: center;
-}
-
-.conteudo-1{
-    
-
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-
-.conteudo-2{
-    
-
-    width: 100px;
-    height: 100px;
-    background-color: rebeccapurple;
-}

@@ -1,183 +1,155 @@
 *{
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
-    --colorbox-1: #42b3e5;
-    --colorbox-2: #0384ce;
-    --colorbox-3: #3156a3;
-    --colorcaracter: #8888a3;
-    --colorcaracter-null: #ffffff;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    --color-font-1: #FFFFFF;
+    --color-font-2: #888888;
+    --color-box-1: #42b3e5;
+    --color-box-2: #0384ce;
+    --color-box-3: #3156a3;
 }
 
 header{
-    width: 100vw;
     height: 120px;
 
     display: flex;
     justify-content: center;
 }
 
-main{
-    width: 100vw;
+.menu-container{
+    width: 990px;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav a{
+    display: block;
+
+    padding: 15px;
+    text-decoration: none;
+    color: var(--color-font-2);
+}
+
+.activ, nav a:hover{
+    background-color: var(--color-box-1);
+    color: var(--color-font-1);
+
+    transition: .6s;
+}
+
+#banner{
     height: calc(100vh - 120px);
 
     background: url(../imagem/person.jpg) center no-repeat;
     background-size: cover;
+    
     display: flex;
     justify-content: center;
 }
 
-.container-menu{
+.banner-container{
     width: 990px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.container-menu img{
-    margin-right: 20px;
-}
-
-.menu{
     height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.menu ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.menu ul > li{
-    flex: 1;
-    list-style-type: none;
-    height: 40px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.menu a{
-    text-decoration: none;
-    color: var(--colorcaracter);
-    padding: 15px;
-}
+.banner-text{
+    height: calc(100% - 200px);
 
-.menu a:hover{
-    background-color: var(--colorbox-1);
-    color: var(--colorcaracter-null);
-    transition: 0.7s;
-}
+    color: var(--color-font-1);
+    text-shadow: 0px 1px #000000;
 
-.container-banner{
-    /* background: url(../imagem/person.jpg) center no-repeat;
-    background-size: cover; */
-
-    max-width: 990px;
-}
-
-.text-banner{
-    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--colorcaracter-null);
-    text-shadow: 1px 0px #000000;
 }
 
-.text-banner > h1{
+.banner-text > h1{
     width: 330px;
-    font-size: 50px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    font-weight: lighter;
+    font-size: 50px;
+    font-weight: 500;
 }
 
-.text-banner > p{
-    width: 360px;
-    font-size: 20px;
-    padding-left: 20px;
+.banner-text > p{
+    width: 300px;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 
-.box-banner{
-    height: calc(100% - 420px);
+.banner-box{
+    height: 200px;
 
     display: flex;
 }
 
 .box{
     flex: 1;
-    min-width: 259px;
-    padding: 20px;
-
-}
-
-.box-1{
-    background-color: var(--colorbox-1);
-}
-
-.box-2{
-    background-color: var(--colorbox-2);
-    
-}
-
-.box-3{
-    background-color: var(--colorbox-3);
-
+    padding: 25px;
+    color: var(--color-font-1);
 }
 
 .box > h2{
-    color: var(--colorcaracter-null);
-    font-weight: 500;
+    margin-bottom: 20px;
+    font-weight: lighter;
 }
 
-.box p{
-    color: var(--colorcaracter-null);
-    margin: 20px 0px 10px 0px;
-}
-
-.box > button{
-    width: 100px;
-
+.banner-container button{
+    margin-top: 15px;
     padding: 10px;
-    background-color: transparent;
-    color: var(--colorcaracter-null);
+
     border: 1px solid #ffffff;
+    color: var(--color-font-1);
+    background-color: transparent;
     cursor: pointer;
 }
 
-.box > button:hover{
-    background-color: #0000001a;
+.banner-container button:hover{
+    background-color: #0000002f;
 }
 
-.container-box-3{
-    display: flex;
-    flex-direction: column;
-    
+.box-1{
+    background-color: var(--color-box-1);
 }
 
-.container-box-3 div{
-    height: 40px;
-    border-bottom: 1px solid #4468b2;
+.box-2{
+    background-color: var(--color-box-2);
+}
 
+.box-3{
+    background-color: var(--color-box-3);
+}
+
+.days-and-hours{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #4468b2;
 }
 

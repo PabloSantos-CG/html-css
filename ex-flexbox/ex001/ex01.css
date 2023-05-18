@@ -193,10 +193,16 @@ nav a{
 .widget-body{
     flex: 1;
     margin-right: 10px;
+    border-radius: 5px;
 } 
 
 .widget-body a{
     text-decoration: none;
+}
+
+.widget-body:hover{
+    background-color: #42b4e50d;
+    transition: 1s;
 }
 
 .news-date{

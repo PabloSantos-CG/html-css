@@ -9,6 +9,7 @@
 :root{
     --color-font-1: #FFFFFF;
     --color-font-2: #888888;
+    --color-font-3: #000000;
     --color-box-1: #42b3e5;
     --color-box-2: #0384ce;
     --color-box-3: #3156a3;
@@ -123,6 +124,8 @@ nav a{
     color: var(--color-font-1);
     background-color: transparent;
     cursor: pointer;
+
+    transition: .6s;
 }
 
 .banner-container button:hover{
@@ -151,39 +154,87 @@ nav a{
 }
 
 #page-news{
-    background-color: gray;
-    height: 1040px;
-
     display: flex;
     justify-content: center;
 }
 
-.container-page-news{
+.page-news-container{
     width: 990px;
-    height: 100%;
-}
-
-.index-news{
-    background-color: orange;
-    height: 90px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.index-news  p{
-    flex: 1;
-}
-
-.news-article{
-    background-color: greenyellow;
-    height: calc(100% - 90px);
 
     display: flex;
 }
 
-.column{
+.column-1{
+    flex: 2;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-2{
     border: 1px solid black;
     flex: 1;
+}
+
+.widget-tittle{
+    padding-top: 30px;
+}
+
+.widget-tittle > div{
+    width: 50px;
+    height: 2px;
+
+    margin-top: 10px;
+    background-color: var(--color-box-1);
+}
+
+.widget-body{
+    flex: 1;
+    margin-right: 10px;
+} 
+
+.widget-body a{
+    text-decoration: none;
+}
+
+.news-date{
+    display: flex;
+    margin: 30px 0px;
+}
+
+.news-date > .p1{
+    padding: 10px;
+    background-color: var(--color-box-3);
+    color: var(--color-font-1);
+    margin-right: 2px;
+}
+
+.news-date > .p2{
+    padding: 10px;
+    background-color: var(--color-box-1);
+    color: var(--color-font-1);
+}
+
+.news-thumbnail{
+    min-width: 300px;
+}
+
+.news-thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+.widget-body a > h3{
+    margin: 30px 0px;
+    color: var(--color-font-3);
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.widget-body a > p{
+    color: var(--color-font-2);
+    line-height: 1.4em;
+    
 }

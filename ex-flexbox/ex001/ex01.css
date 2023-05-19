@@ -192,6 +192,7 @@ nav a{
 
 .widget-body{
     flex: 1;
+    min-width: 300px;
     margin-right: 10px;
     border-radius: 5px;
 } 
@@ -221,10 +222,6 @@ nav a{
     padding: 10px;
     background-color: var(--color-box-1);
     color: var(--color-font-1);
-}
-
-.news-thumbnail{
-    min-width: 300px;
 }
 
 .news-thumbnail img{

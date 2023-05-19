@@ -230,7 +230,7 @@ nav a{
 }
 
 .widget-body a > h3{
-    margin: 30px 0px;
+    margin: 20px 0px 15px 0px;
     color: var(--color-font-3);
     font-size: 1.4em;
     font-weight: lighter;
@@ -239,5 +239,113 @@ nav a{
 .widget-body a > p{
     color: var(--color-font-2);
     line-height: 1.4em;
-    
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 990px;
+}
+
+.menu-footer{
+    display: flex;
+}
+
+.box-menu{
+    padding: 30px;
+    flex: 1;
+    color: var(--color-font-1);
+}
+
+.box-menu > h3{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.box-menu > p{
+    font-size: .8em;
+}
+
+.menu-1{
+    background-color: var(--color-box-1);
+}
+
+.menu-2{
+    background-color: var(--color-box-2);
+}
+
+.menu-3{
+    background-color: var(--color-box-3);
+}
+
+.sections-footer{
+    display: flex;
+}
+
+.column-footer{
+    flex: 1;
+    color: var(--color-font-2);
+    line-height: 1.3em;
+    padding-right: 20px;
+}
+
+.column-footer > p{
+    margin: 30px 0px;
+}
+
+.column-footer p{
+    font-size: .85em;
+}
+
+.footer-section a{
+    text-decoration: none;
+    color: var(--color-box-1);
+    display: block;
+}
+
+.widget-tittle-footer h3{
+    color: var(--color-font-1);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.data-clinic{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.box-dataclinic-2{
+    align-self: flex-end;
+}
+
+.box-dataclinic-2 > .email{
+    color: var(--color-font-1);
+}
+
+.copyright-footer{
+    border-top: 1px solid var(--color-font-2);
+    padding: 15px 0px;
+}
+
+.copyright-footer > p{
+    color: var(--color-font-2);
+    font-size: .8em;
+}
+
+.copyright-footer a{
+    text-decoration: none;
+    font-style: italic;
+    color: var(--color-font-1);
+}
+
+.copyright-footer a:hover{
+    text-decoration: underline;
 }

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    font-size: 3em;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+@keyframes tester {
+    
+}

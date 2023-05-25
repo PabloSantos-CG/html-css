@@ -70,7 +70,7 @@ main{
 }
 
 img{
-    width: 340px;
+    width: 300px;
     height: auto;
 
     animation: cellmov 3s infinite linear .2s;

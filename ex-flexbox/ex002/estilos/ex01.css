@@ -2,22 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: url(../../imagem/celular-saindoBolinhas.jpg)center no-repeat;
+    background-size: cover;
 }
 
-main{
-    height: 100vh;
+header{
+    background-color: black;
+    color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.container{
-    font-size: 3em;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: antiquewhite;
+nav ul li{
+    display: inline-block;
+    padding: 2rem 1rem;
+    margin-right: 10px;
+    border-bottom: 3.5px solid black;
+    cursor: pointer;
 }
 
-@keyframes tester {
-    
+nav ul li:hover{
+    border-color: #a46b02;
+    transition: .4s;
+}
+
+main{
+    height: 88.6vh;
+}
+
+.fundo-escuro{
+    height: 100%;
+    background-color: #00000089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.fundo-escuro > p{
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.fundo-escuro p > a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px 0px;
+    background-image: linear-gradient(to right, #F2D544, #F2B90F);
+    color: #333101;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid rgb(96, 96, 1);
+    text-align: center;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.238);
+}
+
+.fundo-escuro p > a:hover{
+    background-image: linear-gradient(to right, #000000, #00000077);
+    color: #d3d2d2;
+}
+
+img{
+    width: 340px;
+    height: auto;
+
+    animation: cellmov 3s infinite linear .2s;
+}
+
+@keyframes cellmov{
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(-10%);
+    }
 }

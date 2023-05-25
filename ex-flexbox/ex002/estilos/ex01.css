@@ -27,7 +27,7 @@ nav ul li{
 
 nav ul li:hover{
     border-color: #a46b02;
-    transition: .4s;
+    transition: .4s ease;
 }
 
 main{

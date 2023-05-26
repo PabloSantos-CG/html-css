@@ -112,3 +112,22 @@ section p{
 section p span{
     font-weight: bold;
 }
+
+footer{
+    background-color: #1a1919;
+    padding: 10px 5px;
+    color: #ffffff;
+    text-align: center;
+    font-size: .85em;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

@@ -155,12 +155,12 @@ button:hover{
     margin: 0 10px;
 }
 
-.company-tittle h2{
+.company-tittle h2 {
     margin-bottom: 15px;
     font-size: 22px;
 }
 
-.company-tittle h3{
+.company-tittle h3 {
     font-size: 12px;
     color: var(--color-1);
 }
@@ -177,4 +177,75 @@ button:hover{
 .company-iframe{
     flex: 1;
     border: 1px solid black;
+}
+
+#service{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.service-container{
+    width: 1140px;
+    height: 415px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.service-tittle-box{
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+.service-box{
+    flex: 2;
+
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.box-content-service{
+    flex: 1;
+    border-left: 3px solid #808080ab;
+
+    text-align: center;
+    color: var(--color-null);
+}
+
+.box-content-service img{
+    margin: 10px auto 30px auto;
+}
+
+.box-content-service h2{
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+.box-content-service p{
+    line-height: 1.5em;
+    font-size: .9em;
+    color: var(--color-1);
+}
+
+.content-service-4{
+    border-right: 3px solid #808080ab;
+
+}
+
+.service-tittle-box h2 {
+    color: var(--color-null);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.service-tittle-box h3 {
+    font-size: 12px;
+    color: var(--color-1);
 }

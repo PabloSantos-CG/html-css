@@ -140,12 +140,13 @@ button:hover{
     height: 530px;
 }
 
-.company-tittle{
-    height: 160px;
+.tittle-box{
+    margin: 60px 0 45px 0;
+    
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .company{
@@ -155,18 +156,14 @@ button:hover{
     margin: 0 10px;
 }
 
-.company-tittle h2 {
+.tittle-h2 {
     margin-bottom: 15px;
     font-size: 22px;
 }
 
-.company-tittle h3 {
+.tittle-h3 {
     font-size: 12px;
     color: var(--color-1);
-}
-
-.company-text{
-    flex: 1.5;
 }
 
 .company-text p{
@@ -175,8 +172,12 @@ button:hover{
 
 
 .company-iframe{
-    flex: 1;
-    border: 1px solid black;
+    min-width: 450px;
+}
+
+.company-iframe img{
+    width: 100%;
+    box-shadow: 3px 3px 4px 3px #00000031;
 }
 
 #service{
@@ -187,27 +188,18 @@ button:hover{
 
 .service-container{
     width: 1140px;
-    height: 415px;
 
     display: flex;
     flex-direction: column;
 }
 
-.service-tittle-box{
-    flex: 1;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-    
+#service .tittle-box h2{
+    color: var(--color-null);
 }
 
 .service-box{
-    flex: 2;
-
     display: flex;
+
     margin-bottom: 40px;
 }
 
@@ -220,7 +212,7 @@ button:hover{
 }
 
 .box-content-service img{
-    margin: 10px auto 30px auto;
+    margin: 10px 0 30px 0;
 }
 
 .box-content-service h2{
@@ -239,13 +231,92 @@ button:hover{
 
 }
 
-.service-tittle-box h2 {
-    color: var(--color-null);
-    margin-bottom: 15px;
-    font-size: 22px;
+.project-container{
+    width: 1140px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.service-tittle-box h3 {
-    font-size: 12px;
-    color: var(--color-1);
+.project-container ul{
+    background-color: #ededed;
+    display: inline-block;
+
+    border-radius: 30px;
+    padding: 3px 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.451);
+}
+
+.project-container ul li{
+    display: inline-block;
+    padding: 15px 15px;
+    margin: 0 5px;
+
+    list-style-type: none;
+    border-bottom: 4px solid #ededed;
+
+    cursor: pointer;
+}
+
+.project-container .active{
+    border-color: var(--color-2);
+}
+
+.project-container ul li:hover{
+    border-color: var(--color-2);
+    transition: .5s;
+}
+
+.container-image-project{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box-project{
+    width: 255px;
+    height: auto;
+
+    position: relative;
+    cursor: pointer;
+}
+
+.box-project img{
+    width: 100%;
+    height: 100%;
+}
+
+.box-project--shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: var(--color-null);
+    background-color: var(--bg-color-shadow);
+}
+
+.box-project--shadow p{
+    margin-top: 20px;
+    line-height: 1.5em;
+    font-size: .9em;
+    padding: 0 20px;
+}
+
+.box-project:hover .box-project--shadow{
+    display: flex;
 }

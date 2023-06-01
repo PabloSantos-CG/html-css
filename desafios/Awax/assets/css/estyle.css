@@ -50,7 +50,7 @@ nav ul li,
 nav ul li a{
     text-decoration: none;
     padding: 40px 6px;
-    font-size: 10px;
+    font-size: .83em;
     font-weight: 700;
     color: var(--color-null);
     border-bottom: 5px solid black;
@@ -128,12 +128,25 @@ button:hover{
     position: relative;
 }
 
+.nav-banner input[type='radio']{
+    cursor: pointer;
+    margin: 5px;
+}
+
 .nav-banner span img{
     width: 60px;
+    background-color: var(--color-null);
+    border-radius: 50%;
+    border: 3px solid transparent;
+
     position: absolute;
     right: 1%;
     top: 60%;
-    cursor: pointer;
+}
+
+.nav-banner span img:hover {
+    border-color: green;
+    transition: .5s;
 }
 
 
@@ -268,6 +281,8 @@ button:hover{
     cursor: pointer;
 }
 
+
+
 .project-container .active{
     border-color: var(--color-2);
 }
@@ -379,6 +394,79 @@ button:hover{
     margin-bottom: 40px;
 }
 
-.team-description--photo_area a{
-    text-decoration: none;
+.team-description--icons{
+    margin-bottom: 10px;
+}
+
+.team-description--icons a{
+    margin: 10px;
+}
+
+.container--clients{
+    width: 1140px;
+}
+
+#happy-clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #f7f7f7;
+}
+
+.chf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.chf > img{
+    margin-bottom: 40px;
+}
+
+.chf > p{
+    font-size: .8em;
+    margin: 10px 0 40px 0;
+}
+
+.quote {
+    padding-bottom: 100px;
+}
+
+.quote > p {
+    margin-top: 10px;
+    max-width: 700px;
+    line-height: 1.5em;
+    color: var(--color-1);
+}
+
+.clients{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 45px 30px;
+    background-color: var(--color-null);
+}
+
+#contact{
+    background-color: #f7f7f7;
+}
+
+.contact-container > form{
+    width: 550px;
+}
+.contact-container{
+    max-width: 1140px;
+
+    border: 2px solid black;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -35,12 +35,19 @@ header{
     width: 80px;
 }
 
+.container-img a{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
 }
 
-nav ul li, a{
+nav ul li,
+nav ul li a{
     text-decoration: none;
     padding: 40px 6px;
     font-size: 10px;
@@ -319,4 +326,59 @@ button:hover{
 
 .box-project:hover .box-project--shadow{
     display: flex;
+}
+
+#our-team{
+    background: url(../../media/foto6.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.our-team--bg_colo{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color-shadow);
+}
+
+.container-description--team{
+    width: 1140px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container-description--team .tittle-h2{
+    color: var(--color-null);
+}
+
+.box-description--team{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.box-team{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-null);
+}
+
+.team-description--photo_area img{
+    padding: 40px 0;
+}
+
+.team-description--photo_area h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.team-description--photo_area P{
+    text-align: center;
+    font-size: .7em;
+    margin-bottom: 40px;
+}
+
+.team-description--photo_area a{
+    text-decoration: none;
 }

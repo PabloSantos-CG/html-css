@@ -379,29 +379,102 @@
             </div>
 
             <form action="arquivo.php" method="post">
-                <fieldset>
 
                     <div class="form--user">
-                        <label for="user-name"></label>
-                        <input type="text" name="name" id="user-name">
+                        
+                        <input type="text" name="name" id="user-name" class="box--user" placeholder=" Nome">
+
+                        <input type="email" name="email" id="user-email" class="box--user" placeholder=" E-mail">
+
                     </div>
 
                     <div class="form--tittle">
+
+                        <input type="text" name="tittle" id="tittle-for-text" class="box--user" placeholder=" Título">
 
                     </div>
 
                     <div class="form--text-area">
 
+                        <textarea name="text-description" id="text-area" class="box--user" placeholder=" Mensagem"></textarea>
+
                     </div>
 
-                </fieldset>
+                    <div class="button-form">
+                        <button>Enviar Mensagem</button>
+                    </div>
             </form>
 
         </div>
     </section>
 
+    <section id="map">
+        <div class="map-container">
+
+            <div class="info-map">
+                <!--40 laterais e 50 em cima e em
+                    baixo-->
+                <div class="info-1 box--info">
+                    <img src="assets/imagens/carta-info.png" alt="carta">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="info-1 box--info">
+                    <img src="assets/imagens/localizacao-info.png" alt="carta">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="info-1 box--info">
+                    <img src="assets/imagens/telefone-info.png" alt="carta">
+                    <p>+00 0 1234 5678</p>
+                </div>
+
+                <div class="info-1 box--info">
+                    <img src="assets/imagens/web-info.png" alt="carta">
+                    <p>www.loremipsum.com</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
     <footer>
-        asd
+       <div class="footer-container">
+        <div class="footer-links box-footer">
+
+            <div class="box-link-1 box-link">
+                <div class="link">
+                    <img src="assets/imagens/meu_github.png" alt="">
+                    <p><a href="#">Acesse meu repositório</a></p>
+                </div>
+            </div>
+
+            <div class="box-link-2 box-link">
+                <div class="link">
+                    <img src="assets/imagens/meu_linkedin.png" alt="">
+                    <p><a href="#">Linkedin</a></p>
+                </div>
+            </div>
+
+            <div class="box-link-3 box-link">
+                <div class="link">
+                    <img src="assets/imagens/meu_instagram.png" alt="">
+                    <p><a href="#">Instagram</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-description box-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum a totam, fuga error modi sapiente nisi minima non dolor, deserunt velit voluptatem, ullam vero ipsam earum architecto. Debitis, sapiente!</p>
+        </div>
+
+        <div class="footer-register box-footer">
+            ...
+        </div>
+
+       </div>
     </footer>
 
     <!-- <script>

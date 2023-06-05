@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
+        <div class="header-container flex-container">
 
             <div class="container-img">
                 <a href="#">
@@ -34,29 +34,29 @@
 
     <main>
         <section id="banner" class="bg-shadow">
-            
-            <div class="text-banner">
-                <h1>DESIGN É SOBRE</h1>
-                <h1>COMUNICAÇÃO</h1>
-                <h2>LIGUE PARA NÓS: +00 0 1234 5678</h2>
-                <button>ENTRAR EM CONTATO</button>
+            <div class="banner flex-container">
+
+                <div class="text-banner">
+                    <h1>DESIGN É SOBRE</h1>
+                    <h1>COMUNICAÇÃO</h1>
+                    <h2>LIGUE PARA NÓS: +00 0 1234 5678</h2>
+                    <button>ENTRAR EM CONTATO</button>
+                </div>
+                <div class="nav-banner">
+                    <input type="radio" name="button-banner" checked>
+                    <input type="radio" name="button-banner">
+                    <input type="radio" name="button-banner">
+                    <span>
+                        <a href="#"><img src="assets/imagens/whatsapp.png" alt="whatsapp"></a>
+                    </span>
+                </div>
+                
             </div>
-
-            <div class="nav-banner">
-                <input type="radio" name="button-banner" checked>
-                <input type="radio" name="button-banner">
-                <input type="radio" name="button-banner">
-
-                <span>
-                    <a href="#"><img src="assets/imagens/whatsapp.png" alt="whatsapp"></a>
-                </span>
-            </div>
-
         </section>
     </main>
 
     <section id="company-description">
-        <div class="company-container">
+        <div class="company-container flex-container">
 
             <div class="tittle-box">
                 <h2 class="tittle-h2">SOBRE NÓS</h2>
@@ -81,7 +81,7 @@
     </section>
 
     <section id="service">
-        <div class="service-container">
+        <div class="service-container flex-container">
 
             <div class="tittle-box">
                 <h2 class="tittle-h2">SERVIÇOS</h2>
@@ -130,7 +130,7 @@
     </section>
 
     <section id="section-project">
-        <div class="project-container">
+        <div class="project-container flex-container">
 
             <div class="tittle-box">
                 <h2 class="tittle-h2">PROJETOS</h2>
@@ -264,7 +264,7 @@
 
     <section id="our-team">
             <div class="our-team--bg_colo">
-                <div class="container-description--team">
+                <div class="container-description--team flex-container">
                 
                     <div class="tittle-box">
                         <h2 class="tittle-h2">NOSSO TIME</h2>
@@ -324,7 +324,7 @@
     </section>
 
     <section id="happy-clients">
-        <div class="chf-dp-container container--clients">
+        <div class="chf-dp-container flex-container">
             <div class="tittle-box">
                 <h2 class="tittle-h2">CLIENTES FELIZES</h2>
                 <h3 class="tittle-h3">AVALIAÇÕES DOS CLIENTES</h3>
@@ -347,7 +347,7 @@
     </section>
 
     <section id="clients--logo">
-        <div class="clients container--clients">
+        <div class="clients flex-container">
 
             <a href="#"><img src="media/empresa1.png" alt="empresa logomarca">
             </a>
@@ -371,7 +371,7 @@
     </section>
 
     <section id="contact">
-        <div class="contact-container">
+        <div class="contact-container flex-container">
 
             <div class="tittle-box">
                 <h2 class="tittle-h2">CONTATE-NOS</h2>
@@ -409,11 +409,9 @@
     </section>
 
     <section id="map">
-        <div class="map-container">
+        <div class="flex-container">
 
             <div class="info-map">
-                <!--40 laterais e 50 em cima e em
-                    baixo-->
                 <div class="info-1 box--info">
                     <img src="assets/imagens/carta-info.png" alt="carta">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -440,7 +438,7 @@
 
 
     <footer>
-       <div class="footer-container">
+       <div class="footer-container flex-container">
         <div class="footer-links box-footer">
 
             <div class="box-link-1 box-link">
@@ -467,11 +465,15 @@
         </div>
 
         <div class="footer-description box-footer">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum a totam, fuga error modi sapiente nisi minima non dolor, deserunt velit voluptatem, ullam vero ipsam earum architecto. Debitis, sapiente!</p>
+            <p>Olá! Bem-vindo(a) à minha página, criada como parte de um exercício do meu curso. Estou muito animado em compartilhar o meu trabalho com você!</p>
         </div>
 
         <div class="footer-register box-footer">
-            ...
+            <form action="post">
+                <input type="email" name="email" id="footer_email-user" placeholder="E-MAIL PARA SE INSCREVER">
+
+            </form>
+            <button class="button">INSCREVER-SE</button>
         </div>
 
        </div>

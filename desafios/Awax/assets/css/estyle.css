@@ -127,7 +127,6 @@ button:hover{
 .nav-banner{
     width: 100%;
     padding: 40px 0;
-    position: relative;
 }
 
 .nav-banner input[type='radio']{
@@ -137,17 +136,16 @@ button:hover{
 
 .nav-banner span img{
     width: 60px;
-    background-color: var(--color-null);
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: 1px solid transparent;
 
-    position: absolute;
-    right: 1%;
-    top: 60%;
+    position: fixed;
+    right: 0;
+    top: 90%;
 }
 
 .nav-banner span img:hover {
-    border-color: green;
+    transform: translate(-3%, -3%);
     transition: .5s;
 }
 
@@ -327,6 +325,11 @@ button:hover{
     display: flex;
 }
 
+.box-button{
+    width: 100%;
+    text-align: center;
+}
+
 #our-team{
     background: url(../../media/foto6.jpg) center no-repeat;
     background-size: cover;
@@ -360,6 +363,7 @@ button:hover{
     align-items: center;
     background-color: var(--color-null);
 }
+
 
 .team-description--photo_area img{
     padding: 40px 0;
